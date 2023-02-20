@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	font-size: 24px;
+}
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.projects .container {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: hsl(0, 0%, 35%);
+}
+
+.projects .container h2 {
+	text-transform: uppercase;
+}
+
+.projects .container img {
+	width: 15vh;
+	padding: 10px 15px;
+	border-radius: 15px;
+}
+.projects .container p a {
+	text-decoration: none;
+	color: red;
+}
+.projects .container p a:visited {
+	color: rgb(0, 255, 0);
+}
