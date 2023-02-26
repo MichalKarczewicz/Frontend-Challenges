@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+	--mainBg: hsl(217, 54%, 11%);
+	--cardBg: hsl(216, 50%, 16%);
+	--line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+	--softBlue: hsl(215, 51%, 70%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Outfit", sans-serif;
+	width: 100%;
+	height: 100vh;
+	font-size: 1.1rem;
+	background-color: var(--mainBg);
+}
+
+.container {
+	margin-top: 10vh;
+	padding: 1.5rem;
+	background-color: var(--cardBg);
+	width: 350px;
+	border-radius: 15px;
+}
+
+.eth-img {
+	position: relative;
+}
+
+.eth-img img {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: hsla(178, 100%, 50%, 0.6);
+	opacity: 0;
+	overflow: hidden;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.overlay img {
+	position: absolute;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.container h3 {
+	font-weight: 600;
+	color: var(--white);
+	margin-top: 1.1rem;
+	cursor: pointer;
+}
+
+.container h3:hover {
+	color: hsl(178, 100%, 50%);
+}
+
+.container .description {
+	margin-top: 1.1rem;
+	font-weight: 400;
+	color: var(--softBlue);
+	font-size: 1.1rem;
+}
+
+.values {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+	padding-bottom: 2rem;
+	border-bottom: 0.1px solid hsla(215, 51%, 70%, 0.2);
+}
+
+.value {
+	display: flex;
+	flex-direction: row;
+}
+
+.value p {
+	font-weight: 600;
+	color: hsla(178, 100%, 50%);
+}
+
+.time-left {
+	display: flex;
+	flex-direction: row;
+}
+
+.time-left p {
+	font-weight: 600;
+	color: var(--softBlue);
+}
+
+.values img {
+	padding-right: 0.4rem;
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	font-weight: 600;
+	color: var(--softBlue);
+}
+
+.author img {
+	width: 2.3rem;
+	height: 2.3rem;
+	border-radius: 50%;
+	border: 1.5px solid var(--white);
+}
+
+.author p {
+	font-weight: 400;
+	padding-left: 1rem;
+}
+
+.author p span {
+	color: var(--white);
+}
+
+.author p span:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
