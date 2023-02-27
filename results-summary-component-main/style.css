@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Hanken Grotesk", sans-serif;
+	min-height: 100vh;
+	font-size: 1.1rem;
+	color: hsl(0, 0%, 100%);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 20vh auto;
+	min-height: 50vh;
+	min-width: 375px;
+}
+
+.content-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 25px;
+	padding: 20px 20px;
+	background-image: linear-gradient(
+		180deg,
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
+}
+
+.content-left h2:nth-child(1) {
+	color: hsl(241, 100%, 89%);
+	margin-bottom: 2vh;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 2vh 0;
+	width: 50%;
+	height: 40%;
+	border-radius: 50%;
+	background-image: linear-gradient(
+		180deg,
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+}
+.result p:nth-child(1) {
+	font-size: 4rem;
+	font-weight: 800;
+}
+
+.result p:nth-child(2) {
+	font-size: 1rem;
+	color: hsla(241, 100%, 89%, 0.6);
+	font-weight: 500;
+}
+
+.content-left h2:nth-child(2) {
+	color: hsl(0, 0%, 100%);
+}
+
+.description {
+	max-width: 300px;
+	margin-top: 2vh;
+	padding: 0 30px;
+	text-align: center;
+	color: hsl(241, 100%, 89%);
+}
+
+.content-right {
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	padding: 30px 30px;
+	min-width: 35vh;
+}
+
+.content-right h2 {
+	color: hsl(224, 30%, 27%);
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	color: hsl(224, 30%, 27%);
+	margin-top: 2rem;
+}
+
+.score {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.score p:nth-child(2) {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	color: hsl(224, 30%, 27%);
+}
+
+.score p img {
+	padding-right: 10px;
+}
+
+.score span {
+	color: hsl(241, 100%, 89%);
+	padding-left: 0.7rem;
+}
+
+.reaction {
+	color: hsl(0, 100%, 67%);
+}
+
+.memory {
+	color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+	color: hsl(166, 100%, 37%);
+}
+
+.visual {
+	color: hsl(234, 85%, 45%);
+}
+
+input {
+	border-radius: 25px;
+	border: none;
+	background-color: hsl(224, 30%, 27%);
+	height: 50px;
+	margin-top: 3rem;
+	font-size: 1rem;
+	font-weight: 800;
+	color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 800px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+}
