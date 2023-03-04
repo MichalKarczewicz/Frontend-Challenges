@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: hsl(216, 12%, 8%);
+	font-family: "Overpass", sans-serif;
+	font-size: 15px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rating-card {
+	display: flex;
+	max-width: 400px;
+	border-radius: 25px;
+	padding: 2rem;
+	background-color: hsl(213, 19%, 18%);
+}
+
+.card {
+	display: block;
+}
+
+.star-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff1a;
+	border: none;
+	color: #fff;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.card h2 {
+	margin-top: 2rem;
+	color: hsl(0, 0%, 100%);
+}
+
+.card p {
+	margin: 1rem 0;
+	color: hsl(217, 12%, 63%);
+}
+
+.rating-btns {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.rate-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	background-color: #ffffff1a;
+	color: hsl(217, 12%, 63%);
+	border-radius: 50%;
+	transition: background-color 0.3s;
+}
+
+.rate-btn:hover {
+	background-color: hsl(216, 12%, 54%);
+}
+
+.active {
+	background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn {
+	margin-top: 2rem;
+	height: 3rem;
+	width: 100%;
+	color: #fff;
+	background-color: hsl(25, 97%, 53%);
+	border: none;
+	border-radius: 25px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #fff;
+	color: hsl(25, 97%, 53%);
+}
+
+.evaluated-card {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.evaluated-card .rate {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background-color: #ffffff1a;
+	margin: 1rem 0;
+	color: hsl(25, 97%, 53%);
+	border-radius: 25px;
+}
+.evaluated-card h2 {
+	margin-top: 0.8rem;
+	color: hsl(0, 0%, 100%);
+}
+
+.description {
+	margin-top: 1rem;
+	color: hsl(216, 12%, 54%);
+}
